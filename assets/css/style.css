@@ -1,0 +1,371 @@
+:root{
+    --cinza:rgba(0,0,0,0.1);
+    --cinza-7:rgba(0,0,0,0.9);
+    --cinza_claro:rgba(255,255,255,0.6);
+    --cinza_neutro:rgba(180,180,180,0.9);
+    --azul_escuro:rgba(0,0,150);
+    --azul: rgba(61,60,255,0.9);
+    --verde_claro:rgba(186,251,192,0.8);
+
+    --titulo_h1:25px;
+    --titulos_secundario:18px;
+    --texto_padrao:16px;
+}
+
+.opacity-item{
+    opacity: 0.4;
+ }
+
+.state-positive{
+    color:var(--verde_claro);
+ }
+
+body{
+    font-family: sans-serif;
+    background-color: var(--cinza-7);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+header h1{
+    text-align: center;
+    font-size: var(--titulo_h1);
+    color: var(--cinza_claro);
+}
+
+#section-one{
+    width: 100%;
+    clear: both;
+    height: 860px;
+    position: relative;
+}
+
+.imagen-fundo-one{
+    position: absolute;
+    background-image: url("../img/forno.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.container-form{
+    position: relative;
+    margin-left: 5%;
+    width: 50%;
+    margin-right: 5%;
+    float: left;
+    margin-top: 2%;
+    z-index: 20;
+}
+
+.container-form legend{
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: var(--titulo_h1);
+    width: 100%;
+}
+
+.container-form form{
+    background-color: var(--cinza_claro);
+    border-radius: 20px ;
+    width: 80%;
+    margin: 0% 5%;
+    opacity: 0.8;
+}
+
+.container-form label{
+    margin: 2% 0% 5% 8%;
+    clear: both;
+}
+
+.container-form input{
+    width: 80%;
+    margin: 2% 12% 4% 8%;
+    height: 26px;
+}
+
+.container-form textarea{
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 60px;
+    max-height: 80px;
+    margin: 2% 12% 4% 8%;
+}
+
+.container-form button{
+    width: 150px;
+    text-align: center;
+    height: 44px;
+    border-radius: 20px;
+    background-color: var(--azul);
+    margin-left: 8%;
+    margin-bottom: 5%;
+    border: none;
+}
+
+#section-two{
+    width: 100%;
+    clear: both;
+    height: 500px;
+    position: relative;
+    z-index: 10;   
+}
+
+.imagen-fundo-two{
+    position: absolute;
+    background-image: url("../img/capa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.container-produto{
+    width: 70%;
+    float: left;
+    z-index: 100;
+    position: relative;
+}
+
+.container-produto h1 ,.container-carrinho h1{
+    margin: 5% 0% 4% 2%;
+    width: 42%;
+    background-color:var(--cinza_claro);
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    padding: 1%;
+    color: var(--azul_escuro);
+    font-size: var(--titulo_h1);
+}
+
+.container-produto-item,.container-carrinho-item{
+    width: 30%;
+    float: left;
+    background-color:var(--cinza_claro);
+    margin: 2% 1% 2% 2%;
+    border-radius: 20px;
+    min-height: 200px;
+}
+
+.container-produto-item p ,.container-carrinho-item p{
+    margin: 4%;
+    line-height: 20px;
+    font-size: var(--texto_padrao);
+}
+
+.container-produto-item strong ,.container-carrinho-item strong{
+    color: var(--azul_escuro);
+    font-size: var(--titulos_secundario);
+}
+
+.container-produto-item button{
+    background-color: var(--cinza);
+    width: 90%;
+    margin: 2% 5%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    border: none;
+}
+
+.container-produto-item button:hover{
+    background-color: var(--azul);
+}
+
+.container-carrinho{
+    width: 27%;
+    float: left;
+    background-color: var(--cinza_claro);
+    border-radius: 20px;
+    margin: 3% 1% 0% 2%;
+    z-index: 100;
+    position: relative;
+}
+
+.container-carrinho h1{
+    width: 90%;
+    margin: 2% 5%;
+    background-color: var(--cinza_neutro);
+}
+
+.container-carrinho-infos{
+    width: 90%;
+    margin: 5%;
+}
+
+.container-carrinho-infos p{
+    width: 49%;
+    margin-right: 1%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+.container-carrinho-infos strong{
+    color: var(--azul);
+    font-size: var(--titulos_secundario);
+}
+
+.container-carrinho-itens{
+    width: 90%;
+    margin: 5%;
+}
+
+.container-carrinho img{
+    width: 40%;
+    margin: 2% 5% 2% 4%;
+    height: 60px;
+}
+
+.container-carrinho-item{
+    width: 90%;
+    margin: 2% 5%;
+    background-color: white;
+    clear: both;
+    min-height: 150px; 
+}
+
+.container-carrinho-item p{
+    margin: 4% 0% 4% 2%;
+}
+
+.container-carrinho-item-two{
+    clear: both;
+    height: 30px;
+}
+
+.container-carrinho-item-two p{
+    width: 45%;
+    float: left;
+    margin:0% 1% 5% 2%;
+}
+
+.container-carrinho-item-two p:last-child{
+    margin-bottom: 5%;
+}
+
+.container-carrinho-item button{
+    width: 150px;
+    margin: 2% 20%;
+    height: 30px;
+    border: none;
+    background-color: var(--azul);
+    border-radius: 20px;
+}
+
+.container-carrinho-item button:hover{
+    background-color: var(--azul_escuro);
+    color: var(--cinza_claro);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .container-produto{
+        width: 60%;
+    }
+
+    .container-carrinho{
+        width: 37%;
+    }
+
+    .container-produto-item{
+        width: 44%;
+    }
+
+    .container-form h1{
+        width: 100%;
+        margin: 0% 0%;
+    }
+
+    .container-form form{
+        background-color: var(--cinza_claro);
+        border-radius: 0px 0px 20px 20px ;
+        width: 100%;
+        margin: 0% 0%;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-carrinho{
+        width: 70%;
+        margin: 5% 15%;
+        clear: both;
+    }
+
+    .container-produto{
+        width: 90%;
+        margin: 5%;
+        clear: both;
+    }
+
+    .container-produto h1 {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .container-carrinho-item{
+        clear: both;
+        width: 90%;
+        margin: 3% 5%;
+    }
+
+    #section-two{
+        height: 1200px;
+    }
+
+    #section-one{
+        height: 1100px;
+    }
+
+    .container-form{
+        width: 80%;
+        margin: 5% 10%;
+        clear: both;
+    }
+
+    .container-validacao {
+        width: 80%;
+        margin: 5% 10%;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-carrinho{
+        width: 90%;
+        margin: 5% 5%;
+        clear: both;
+    }
+
+    .container-produto-item{
+        clear: both;
+        width: 90%;
+        margin: 3% 5%;
+    }
+
+    #section-two{
+        height: 1600px;
+    }
+}
+
+.produto-item-uid{
+    display: none;
+}
+
+.item-selecionado{
+    background-color: var(--verde_claro);
+}

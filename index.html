@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Pizzaria Uniao</title>
+</head>
+<body> 
+    <header>
+        <h1>Pizzaria Uniao</h1>
+    </header>
+    <section id="section-one">
+        <div class="imagen-fundo-two"></div>
+        <div class="container-produto">
+            <h1>Lista de produtos</h1>
+            <div class="container-produto-lista"></div>
+        </div>
+        <div class="container-carrinho">
+            <div class="container-carrinho-infos">
+                <p id="qtdItensCarrinho"><strong>Itens: </strong></p>
+                <p id="valorTotaCarrinho"><strong>Total: </strong></p>
+            </div>
+            <div class="container-carrinho-itens"></div>
+            <img src="assets/img/lixeira.png" id="imgLimparCarrinho" >
+            <img src="assets/img/Finzalizar.png" id="imgFinalizarCompras">
+        </div>
+    </section>
+    <section id="section-two">
+        <div class="imagen-fundo-one"></div>
+        <div class="container-form">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Cadastro de produto</legend>
+                    <label for="campNome"><strong>Nome: </strong>*</label>
+                    <input minlength="6" maxlength="50" type="text" name="nome" id="campNome" placeholder="Prencha o campo nome" value="" autocomplete="off">
+                    <label for="campPreco"><strong>Preço: </strong>*</label>
+                    <input type="number" name="preco" id="campPreco" value="" autocomplete="off">
+                    <label for="campDescrip"><strong>Descrição: </strong>*</label>
+                    <textarea wrap="soft" minlength="10"  id="campDescrip" placeholder="Entre com a descrição do produto" autocomplete="off"></textarea>
+                    <button type="reset">Limpar</button>
+                    <button id="buttonCadastrar">Cadastrar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="assets/js/main.js"></script>
+</html>
